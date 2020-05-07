@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/car_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_brand_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/car_image"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="brand name" />
+
+    <TextView
+        android:id="@+id/tv_is_used"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="is ued"
+        app:layout_constraintStart_toStartOf="@id/tv_brand_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_brand_name" />
+
+    <TextView
+        android:id="@+id/tv_construction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="construction year"
+        app:layout_constraintStart_toStartOf="@id/tv_is_used"
+        app:layout_constraintTop_toBottomOf="@id/tv_is_used" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
